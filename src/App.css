@@ -1,0 +1,202 @@
+
+*{
+
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.App{
+
+    display:flex;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+
+.Sidebar{
+    width: 400px;
+    min-width: 210;
+    height: 100%;
+
+}
+
+.Main{
+    
+    width: 100%;
+    height: 100%;
+    background-image:url("./images/rocco-caruso-9UD_BuPqh5g-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+
+size: 20px;
+}
+.User{
+    display:flex;
+    align-items: center;
+    justify-content:  space-between;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+}
+.User .logo img {
+    width: 85px;
+    border-radius: 30%;
+    border:1px solid black;
+}
+.User .info p{
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.User .info a{
+    color: blue;
+    padding-top: 0.4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.AddNewTodo {
+
+    border-bottom: 1px solid #ebebeb;
+}
+
+.AddNewTodo .btn{
+    padding: 1rem;
+    width: 100%;
+    height: 70px;
+
+}
+.AddNewTodo .btn button{
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    background-color: #0080ff;
+    
+    font: bold;
+    cursor: pointer;
+
+}
+.AddNewTodo .btn button:hover {
+    filter: brightness(1.1);
+    transition: all 300ms ease;
+}
+
+/* Modal Styling */
+
+.Modal{
+        position:fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vw;
+        background :rgb(0, 0, 0 ,0.8 )
+
+
+}
+.Modal .container {
+
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background-color: white;
+}
+
+/*  AddNew Todoo*/
+
+.AddNewTodo form{
+    padding: 1rem 1rem 4rem 1rem;
+    width: 440px;
+    background-color: white;
+    border-radius: 4px;
+
+}
+.AddNewTodo form .text input{
+
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border:none;
+    font-size: 0.9rem;
+}
+.AddNewTodo form .text input:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
+
+
+}
+.AddNewTodo form .reminder {
+
+    display:flex;
+    align-items: center;
+    padding: 0.4rem;
+}
+.AddNewTodo form p{
+
+    margin-left: 10px;
+}
+
+.AddNewTodo form .title{
+
+    display:flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.AddNewTodo form .pick-day{
+    padding:1.5rem 1.5rem 0 1.5rem;
+}
+.AddNewTodo form .pick-time{
+    padding:1.5rem;
+}
+.AddNewTodo form .pick-project{
+    padding:0.5 rem;
+}
+.AddNewTodo form .pick-project .projects{
+
+     display:flex;
+    padding: 1rem 1rem 0 1rem;
+    flex-wrap: wrap;
+} 
+.AddNewTodo form .pick-project .projects .project {
+
+    border:1px solid #0080ff;
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
+    cursor:pointer;
+}
+.AddNewTodo form .pick-project .projects .active{
+    background-color: #0080ff;
+    color: aliceblue;
+}
+.AddNewTodo form .cancel{
+
+    position:absolute;
+    top:0;
+    right:5px;
+    cursor: pointer;
+}
+.AddNewTodo form .confirm{
+
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+.AddNewTodo form .confirm button{
+    width:100%;
+    height:40px;
+    background-color:#0080ff;
+    color:white;
+    font-size: 1.1rem;
+    border:none;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+}
